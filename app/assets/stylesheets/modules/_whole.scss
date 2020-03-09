@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.whole{
+  height: 1000px;
+  background-color: #FF00FF;
+  padding: 80px 30px;
+  color: white;
+  &_up{
+    font-size: 80px;
+  }
+  &_down{
+    font-size: 50px;
+    padding-top: 30px;
+    &__list{
+      font-size: 30px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 150px;
+    }
+  }
+}
+
+.fa-instagram:before{
+  font-size: 140px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.fa-facebook:before{
+  font-size: 140px;
+}
+
+.fa-twitter:before{
+  font-size: 140px;
+}
+
+.fa-snapchat-ghost:before{
+  font-size: 140px;
+}
+
+.fab{
+  padding-left: 0px;
+  margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.atama{
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  background-color: #FF0066;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 100px;
+  &_left{
+  }
+  &_right{
+    font-size: 50px;
+    margin: 0 0 0 auto;
+  }
+}
