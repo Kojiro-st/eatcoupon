@@ -1,4 +1,4 @@
-# Eatclub　DB設計
+# Eatcoupon　DB設計
 ## customersテーブル
 |Column|Type|Options|
 |------|----|-------|
