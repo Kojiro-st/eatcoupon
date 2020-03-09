@@ -18,4 +18,5 @@
             .field-input
               = f.password_field :password, autocomplete: "off"
           .actions
-            = f.submit "Log in", class: 'btn'
+            =link_to users_path do
+              = f.submit "Log in", class: 'btn'

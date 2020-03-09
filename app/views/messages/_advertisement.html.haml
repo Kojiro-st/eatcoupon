@@ -3,10 +3,11 @@
     Eatcoupon
   .header_right
     .header_right__shop
-      =link_to new_user_session_path do
+      =link_to new_user_session_path, class: "btn" do
         shop
     .header_right__customer
-      customer
+      =link_to customers_path, class: "btn" do
+        customer
 .top-content
   .top-content_left
     .top-content_left__big
@@ -43,4 +44,4 @@
       .footer__body__right__icon2
         = icon('fab','instagram')
       .footer__body__right__icon3
-        Foodclub
+        Eatcoupon
