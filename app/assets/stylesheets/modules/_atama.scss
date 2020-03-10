@@ -17,7 +17,17 @@
   &_left{
   }
   &_right{
-    font-size: 50px;
+    font-size: 20px;
     margin: 0 0 0 auto;
+    display: flex;
+    &__a{
+      padding-right: 30px
+    }
+    &__b{
+      padding-right: 30px;
+    }
+    &__c{
+      padding-right: 30px;
+    }
   }
 }
