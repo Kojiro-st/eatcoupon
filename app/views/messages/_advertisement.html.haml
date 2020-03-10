@@ -8,30 +8,103 @@
     .header_right__customer
       =link_to customers_path, class: "btn" do
         customer
-.top-content
-  .top-content_left
-    .top-content_left__big
-      Welcome to Eatcoupon
-    .top-content_left__small
-      Eatcoupon is a world-first platform that helps restaurants fill empty tables during low demand periods.
-      %br
-      Join over 1,400 Australian restaurants using Eatcoupon to increase patronage, atmosphere, and profitability.
-.middle-content
-  .middle-content__head
-    The reason you should use Eatcoupon
-    .middle-content__head__block
-      .middle-content__head__block__explain
-        Chat with the shops
-        .middle-content__head__block__explain_detail
-          Eatcoupon helps us drive traffic at times we choose, we have seen a 90% boost in revenue during slow periods
-      .middle-content__head__block__explain
-        Use voucher easily
-        .middle-content__head__block__explain_detail
-          Eatcoupon helps us drive traffic at times we choose, we have seen a 90% boost in revenue during slow periods
-      .middle-content__head__block__explain
-        Just pick up
-        .middle-content__head__block__explain_detail
-          Eatcoupon helps us drive traffic at times we choose, we have seen a 90% boost in revenue during slow periods
+
+.uppercontent
+  .uppercontent__top-content
+    .uppercontent__top-content_left
+      .uppercontent__top-content_left__big
+        Welcome to Eatcoupon
+      .uppercontent__top-content_left__small
+        Eatcoupon is a world-first platform that helps restaurants fill empty tables during low demand periods.
+        %br
+        Join over 1,400 Australian restaurants using Eatcoupon to increase patronage, atmosphere, and profitability.
+
+.lowercontent
+  .lowercontent__top-content
+    .lowercontent__top-content__up
+      Why Eatcoupon
+    .lowercontent__top-content__down
+      .lowercontent__top-content__down__a
+        %span.image
+          = image_tag src="muscle.jpg", size: "300x200"
+        .lowercontent__top-content__down__a__down
+          Join 1400+ Australian restaurants
+      .lowercontent__top-content__down__a
+        %span.image
+          = image_tag src="toriniku.jpg", size: "300x200"
+        .lowercontent__top-content__down__a__down
+          Access over 1 million diners
+      .lowercontent__top-content__down__a
+        %span.image
+          = image_tag src="sushi.jpg", size: "300x200"
+        .lowercontent__top-content__down__a__down
+          Drive traffic at the times you choose
+  .lowercontent__middle-content
+    .lowercontent__middle-content__all
+      .lowercontent__middle-content__all__a
+        .lowercontent__middle-content__all__a__top
+          About EatClub
+          .lowercontent__middle-content__all__a__top__youtube-container
+          %iframe(width="650px" height="350" src="https://www.youtube.com/embed/KftpUbScl6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      .lowercontent__middle-content__all__a
+        .lowercontent__middle-content__all__a__top
+          How it works
+          .lowercontent__middle-content__all__a__top__youtube-container
+          %iframe(width="650" height="350" src="https://www.youtube.com/embed/bek1y2uiQGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  .lowercontent__down-content
+    .lowercontent__down-content__top
+      Download the app and sign up your restaurant in 3 minutes
+    .lowercontent__down-content__down
+      .lowercontent__down-content__down__file
+        .lowercontent__down-content__down__file__ball
+          .lowercontent__down-content__down__file__ball__point.rounded-circle
+            1
+        .lowercontent__down-content__down__file__ball__number
+          .lowercontent__down-content__down__file__ball__number__sentence1
+            Tell us about you
+          .lowercontent__down-content__down__file__ball__number__sentence2
+            30 seconds
+      .lowercontent__down-content__down__file
+        .lowercontent__down-content__down__file__ball
+          .lowercontent__down-content__down__file__ball__point.rounded-circle
+            2
+        .lowercontent__down-content__down__file__ball__number
+          .lowercontent__down-content__down__file__ball__number__sentence1
+            Tell us about your restaurant
+          .lowercontent__down-content__down__file__ball__number__sentence2
+            1 minute
+      .lowercontent__down-content__down__file
+        .lowercontent__down-content__down__file__ball
+          .lowercontent__down-content__down__file__ball__point.rounded-circle
+            1
+        .lowercontent__down-content__down__file__ball__number
+          .lowercontent__down-content__down__file__ball__number__sentence1
+            Set up your opening hours
+          .lowercontent__down-content__down__file__ball__number__sentence2
+            1 minute
+
+.lowestcontent
+  .lowestcontent__up
+    .lowestcontent__up__top
+      Some of our restaurant partners
+    .lowestcontent__up__down
+  .lowestcontent__down
+    .lowestcontent__down__all
+      .lowestcontent__down__all__sentence
+        EatClub helps us drive traffic
+        %br
+        at times we choose, we have
+        %br
+        seen a 90% boost in revenue
+        %br
+        during slow periods
+      .lowestcontent__down__all__editer
+        .lowestcontent__down__all__editer__name
+          Naomi Scott
+        .lowestcontent__down__all__editer__location
+          NY, USA
+
+
 .footer
   .footer__head
     Use this app!!!
