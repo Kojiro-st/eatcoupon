@@ -4,10 +4,8 @@ class CustomersController < ApplicationController
   end
 
   def new
-  end
-
-  def show
-    @customer = Customer.find(params[:id])
+    @customer = Customer.new
+    @customer.users << current_user
   end
 
   def create

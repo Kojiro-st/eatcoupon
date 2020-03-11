@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :customers
-  resources :customers, only: [:index, :new, :show, :create]
+  resources :customers, only: [:index, :new, :create]
   devise_for :users
   # get 'messages/index'
 

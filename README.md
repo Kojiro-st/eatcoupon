@@ -7,9 +7,9 @@
 |password|string|null: false|
 
 ### Association
-- has_many :shops,  through:  :customers_shops
+- has_many :shops,  through:  :customers_users
 
-## shopsテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
@@ -18,19 +18,19 @@
 |password|string|null: false|
 
 ### Association
-- has_many :customers,  through:  :customers_shops
+- has_many :customers,  through:  :customers_users
 
 ## Messagesテーブル
 |column|Type|Options|
 |------|----|-------|
 |body|text||
 |image|string||
-|group_id|integer|null: false, foreign_key: true|
+|customer_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
 ## Association
 - belongs_to :customer
-- belongs_to :shop
+- belongs_to :user
 
 ## customers_shopsテーブル
 |Column|Type|Options|
@@ -41,4 +41,4 @@
 
 ### Association
 - belongs_to :customer
-- belongs_to :shop
+- belongs_to :user

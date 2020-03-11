@@ -3,10 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
-         validates :name, presence: true, uniqueness: true
-
-         has_many :customer_users
-         has_many :customers, through: :customer_users
-         has_many :messages
+  has_many :customer_users
+  has_many :customers, through: :customer_users
 end
