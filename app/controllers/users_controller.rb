@@ -2,9 +2,16 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @user.users << current_user
   end
 
   def create
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to new_user_path, notice: 'グループを作成しました'
+    else
+      render :new
+    end
   end
 
   def edit
@@ -12,7 +19,7 @@ class UsersController < ApplicationController
 
   def update
     if current_user.update(user_params)
-      redirect_to root_path
+      redirect_to users_index_path
     else
       render :edit
     end
